@@ -1,7 +1,6 @@
 body{
-    background: url(./Bitcoin_Coins.jpg) no-repeat;
+    background: url(./Bitcoin_Coins.jpg) fixed no-repeat;
     background-size: cover;
-    background-position: 0 -20px;
 }
 h1 {
     color: #272343;
