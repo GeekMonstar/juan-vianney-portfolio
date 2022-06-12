@@ -1,0 +1,35 @@
+*{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    transition: 1s;
+}
+h1{
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 28px;
+    margin-bottom: 100px;
+}
+button{
+    width: 3.5cm;
+    height: 1.5cm;
+    border-radius: 10px;
+    border: 0;
+    background-color: silver;
+    cursor: pointer;
+    transition: 1s;
+}
+.dark {
+    background-color: #112F41;
+    color: #ffffff;
+    transition: 1s all;
+}
+.dark button {
+    background: #144098;
+    color: #fff;
+    transition: 1s all;
+}

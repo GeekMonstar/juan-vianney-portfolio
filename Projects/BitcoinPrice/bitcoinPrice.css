@@ -1,0 +1,35 @@
+body{
+    background: url(./Bitcoin_Coins.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -20px;
+}
+h1 {
+    color: #272343;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#price {
+    font-size: 2em;
+}
+.container{
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,.7);
+    border-radius: 10px;
+    width: 40vw;
+    position: relative;
+    transform-origin: 50% 50%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#bitcoin-logo{
+    width: 100px;
+    height: auto;
+    position: relative;
+}
+p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
