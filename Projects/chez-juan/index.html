@@ -31,7 +31,7 @@
             </div>
         </header>
         <div id='scroll'>
-            <? for($i = 0; $i < count($scroll_img); $i++){
+            <?php for($i = 0; $i < count($scroll_img); $i++){
                 echo("<div class='menu-example-scroll'><a href='{$scroll_img[$i][1]}'><img src='{$scroll_img[$i][0]}' alt='Top-menu'/></a></div>");
             }?>
         </div>
@@ -42,13 +42,13 @@
             <div id="main-content">
                 <div id="categories">
                     <ul id="categories-list">
-                        <? foreach($categories_list as $categorie => $id): ?>
+                        <?php foreach($categories_list as $categorie => $id): ?>
                             <li class='catergories-list-item'><a href='<?=$id?>'><?=$categorie?></a></li>
                         <? endforeach ?>
                     </ul>
                 </div>
                 <div id="menu">
-                    <?foreach($categories_list as $categorie => $id):?>
+                    <?php foreach($categories_list as $categorie => $id):?>
                         <div id="<?$id?>">
                             <h3 class="categorie-title"><?=$categorie?></h3>
                             <div class="categorie-content">
@@ -59,10 +59,10 @@
                                         <button class='add' onclick="<?click($c)?>">Ajouter à la commande</button>
                                         <?var_dump($c[3])?>
                                     </div>
-                                <?endforeach?>
+                                <?php endforeach?>
                             </div>
                         </div>
-                    <? endforeach ?>
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>
