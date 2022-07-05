@@ -1,5 +1,3 @@
-<?php require_once './php/ressources.php'?>
-<?php require_once './php/functions.php'?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +29,7 @@
             </div>
         </header>
         <div id='scroll'>
-            <?php for($i = 0; $i < count($scroll_img); $i++){
-                echo("<div class='menu-example-scroll'><a href='{$scroll_img[$i][1]}'><img src='{$scroll_img[$i][0]}' alt='Top-menu'/></a></div>");
-            }?>
-        </div>
+            <div class='menu-example-scroll'><a href='#'><img src='img/Top1.jpg' alt='Top-menu'/></a></div><div class='menu-example-scroll'><a href='#'><img src='img/Top2.jpg' alt='Top-menu'/></a></div><div class='menu-example-scroll'><a href='#'><img src='img/Top3.jpg' alt='Top-menu'/></a></div><div class='menu-example-scroll'><a href='#'><img src='img/Top4.jpg' alt='Top-menu'/></a></div><div class='menu-example-scroll'><a href='#'><img src='img/Top5.jpeg' alt='Top-menu'/></a></div><div class='menu-example-scroll'><a href='#'><img src='img/Top6.jpg' alt='Top-menu'/></a></div>        </div>
         <div id="main">
             <div id='main-head'>
                 <h2>categories</h2>
@@ -42,28 +37,106 @@
             <div id="main-content">
                 <div id="categories">
                     <ul id="categories-list">
-                        <?php foreach($categories_list as $categorie => $id): ?>
-                            <li class='catergories-list-item'><a href='<?=$id?>'><?=$categorie?></a></li>
-                        <? endforeach ?>
-                    </ul>
+                                                    <li class='catergories-list-item'><a href='bugers'>burgers</a></li>
+                                                    <li class='catergories-list-item'><a href='pizza'>pizzas</a></li>
+                                                    <li class='catergories-list-item'><a href='glass'>glasses</a></li>
+                                                    <li class='catergories-list-item'><a href='extra'>extras</a></li>
+                                            </ul>
                 </div>
                 <div id="menu">
-                    <?php foreach($categories_list as $categorie => $id):?>
-                        <div id="<?$id?>">
-                            <h3 class="categorie-title"><?=$categorie?></h3>
+                                            <div id="">
+                            <h3 class="categorie-title">burgers</h3>
                             <div class="categorie-content">
-                                <?foreach($$categorie as $c):?>
-                                    <div class="menu-example">
-                                        <img src="<?=$c[1]?>" alt="Asian-Burger" class='meat-img'/>
-                                        <h4 class="meat-title"><?=$c[0]?> - <span class="meat-price"><?=$c[2]?>$</span></h4><br/>
-                                        <button class='add' onclick="<?click($c)?>">Ajouter à la commande</button>
-                                        <?var_dump($c[3])?>
+                                                                    <div class="menu-example">
+                                        <img src="img/Burger-Home.jpg" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">burger home - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
                                     </div>
-                                <?php endforeach?>
-                            </div>
+                                                                    <div class="menu-example">
+                                        <img src="img/Burger-Becon.jpg" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">burger becon - <span class="meat-price">9.5$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                            </div>
                         </div>
-                    <?php endforeach ?>
-                </div>
+                                            <div id="">
+                            <h3 class="categorie-title">pizzas</h3>
+                            <div class="categorie-content">
+                                                                    <div class="menu-example">
+                                        <img src="img/Pizza-A.webp" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">pizza a - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                                    <div class="menu-example">
+                                        <img src="img/Pizza-C.jpg" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">pizza c - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                                    <div class="menu-example">
+                                        <img src="img/Pizza-D.jpg" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">pizza d - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                                    <div class="menu-example">
+                                        <img src="img/Pizza-E.jpg" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">pizza e - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div id="">
+                            <h3 class="categorie-title">glasses</h3>
+                            <div class="categorie-content">
+                                                                    <div class="menu-example">
+                                        <img src="img/Glass-A.webp" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">Glass à la Vaille - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                                    <div class="menu-example">
+                                        <img src="img/Pizza-B.webp" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">glasse à la fraise - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                            </div>
+                        </div>
+                                            <div id="">
+                            <h3 class="categorie-title">extras</h3>
+                            <div class="categorie-content">
+                                                                    <div class="menu-example">
+                                        <img src="img/Extra-4.webp" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">extra 4 - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                                    <div class="menu-example">
+                                        <img src="img/Extra-5.jpg" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">extra 5 - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                                    <div class="menu-example">
+                                        <img src="img/Extra-6.jpg" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">extra 6 - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                                    <div class="menu-example">
+                                        <img src="img/Extra-7.jpg" alt="Asian-Burger" class='meat-img'/>
+                                        <h4 class="meat-title">extra 7 - <span class="meat-price">8$</span></h4><br/>
+                                        <button class='add' onclick="">Ajouter à la commande</button>
+                                        bool(false)
+                                    </div>
+                                                            </div>
+                        </div>
+                                    </div>
             </div>
         </div>
     </body>
