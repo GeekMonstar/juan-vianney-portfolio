@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header-first-part{
+    background-color: #000;
+    color: #FFF;
+    width: 100%;
+}
+#h-f-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    width: 70px;
+    height: auto;
+    margin: 10px;
+}
+#name{
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0 7px 0;
+}
+#nav-links li{
+    list-style: none;
+    margin-left: 60px;
+}
+#nav-links li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+#header-last-part{
+    width: 100%;
+    height: 90vh;
+    background: url(../img/house-gadd35544d_1280-copie.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 -120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FFF;
+}
+section{
+    min-height: 40px;
+    transition: 1s;
+}
+#about, #why{
+    padding-bottom: 1in;
+}
+#about:hover, #why:hover{
+    background-color: #000;
+    color: #FFF;
+    transition: 1s;
+}
+#services{
+    background-color: #000;
+    color: #FFF;
+}
+.title-bar{
+    width: 45vw;
+    background-color: #000;
+    color: #FFF;
+    padding-left: 20px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 1s;
+}
+section:hover .title-bar{
+    width: 90vw;
+    background-color: #FFF;
+    border: #000 2px solid;
+    color: #000;
+    transition: 1s;
+}
+p.content{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+}
+.services-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1in;
+}
+.list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list-item img{
+    height: 2in;
+    width: auto;
+}
+section ul{
+    list-style: circle;
+    margin-left: 120px;
+}
+section ul li{
+    font-size: 25px;
+
+}
