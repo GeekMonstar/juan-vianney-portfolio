@@ -1,7 +1,3 @@
-<?php
-require_once './php/ressources.php';
-require_once './php/components.php';
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,8 +10,20 @@ require_once './php/components.php';
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <?=Loading()?>
-    <header>
+        <div id="loader">
+        <p>
+            <span>C</span>
+            <span>H</span>
+            <span>A</span>
+            <span>R</span>
+            <span>G</span>
+            <span>E</span>
+            <span>M</span>
+            <span>E</span>
+            <span>N</span>
+            <span>T</span>
+        </p>
+    </div>    <header>
         <nav>
             <div id="logo-label">
                 <img id="header-logo" src="img/logo-png.png"/>
@@ -33,52 +41,73 @@ require_once './php/components.php';
     </header>
     <section id="presentation">
         <h2>Presentation</h2>
-        <?php for ($i = 0; $i < sizeof($presentation_data); $i += 2):?>
-            <?php if($i < (sizeof($presentation_data)-1)):?>
-            <div class="presentation-item-l">
-                <img class="presentation-img" src="<?=$presentation_data[$i][0]?>" alt="img" />
+                                <div class="presentation-item-l">
+                <img class="presentation-img" src="./img/tof-1.jpg" alt="img" />
                 <div class="presentation-text">
-                    <h3 class="presentation-item-title"><?=$presentation_data[$i][1]?></h3>
-                    <p class="presentation-p"><?=$presentation_data[$i][2]?></p>
+                    <h3 class="presentation-item-title">Titre1</h3>
+                    <p class="presentation-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec lectus eu elit varius dictum eu nec erat. Nullam non ipsum viverra, accumsan justo et, porta lectus. Proin ac tellus suscipit, tempor ex sit amet, consequat magna. Donec ac porta mauris, a pulvinar felis. Sed non odio felis. In ipsum ex, rutrum vitae lobortis vel, pellentesque sit amet velit. Suspendisse vel sapien placerat, posuere mauris a, fermentum felis. Curabitur consequat venenatis ultrices. Quisque ut suscipit arcu, ut auctor dui. Duis sodales, lacus eget vehicula dictum, neque ipsum porta neque, et lobortis lacus arcu eget erat. Sed erat augue, sagittis id ante ut, auctor venenatis orci. Donec blandit quis orci eu molestie. Aliquam volutpat tellus non risus blandit aliquet. Maecenas vel dolor commodo, venenatis felis vel, viverra elit.</p>
                 </div>
             </div>
             <div class="presentation-item-r">
                 <div class="presentation-text">
-                    <h3 class="presentation-item-title"><?=$presentation_data[$i+1][1]?></h3>
-                    <p class="presentation-p"><?=$presentation_data[$i+1][2]?></p>
+                    <h3 class="presentation-item-title">Titre2</h3>
+                    <p class="presentation-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec lectus eu elit varius dictum eu nec erat. Nullam non ipsum viverra, accumsan justo et, porta lectus. Proin ac tellus suscipit, tempor ex sit amet, consequat magna. Donec ac porta mauris, a pulvinar felis. Sed non odio felis. In ipsum ex, rutrum vitae lobortis vel, pellentesque sit amet velit. Suspendisse vel sapien placerat, posuere mauris a, fermentum felis. Curabitur consequat venenatis ultrices. Quisque ut suscipit arcu, ut auctor dui. Duis sodales, lacus eget vehicula dictum, neque ipsum porta neque, et lobortis lacus arcu eget erat. Sed erat augue, sagittis id ante ut, auctor venenatis orci. Donec blandit quis orci eu molestie. Aliquam volutpat tellus non risus blandit aliquet. Maecenas vel dolor commodo, venenatis felis vel, viverra elit.</p>
                 </div>
-                <img class="presentation-img" src="<?=$presentation_data[$i+1][0]?>" alt="img"/>
+                <img class="presentation-img" src="./img/tof-2.jpg" alt="img"/>
             </div>
-            <?php else:?>
-                <div class="presentation-item-l">
-                <img class="presentation-img" src="<?=$presentation_data[$i][0]?>" alt="img"/>
+                                            <div class="presentation-item-l">
+                <img class="presentation-img" src="./img/tof-3.jpg" alt="img" />
                 <div class="presentation-text">
-                    <h3 class="presentation-item-title"><?=$presentation_data[$i][1]?></h3>
-                    <p class="presentation-p"><?=$presentation_data[$i][2]?></p>
+                    <h3 class="presentation-item-title">Titre3</h3>
+                    <p class="presentation-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec lectus eu elit varius dictum eu nec erat. Nullam non ipsum viverra, accumsan justo et, porta lectus. Proin ac tellus suscipit, tempor ex sit amet, consequat magna. Donec ac porta mauris, a pulvinar felis. Sed non odio felis. In ipsum ex, rutrum vitae lobortis vel, pellentesque sit amet velit. Suspendisse vel sapien placerat, posuere mauris a, fermentum felis. Curabitur consequat venenatis ultrices. Quisque ut suscipit arcu, ut auctor dui. Duis sodales, lacus eget vehicula dictum, neque ipsum porta neque, et lobortis lacus arcu eget erat. Sed erat augue, sagittis id ante ut, auctor venenatis orci. Donec blandit quis orci eu molestie. Aliquam volutpat tellus non risus blandit aliquet. Maecenas vel dolor commodo, venenatis felis vel, viverra elit.</p>
                 </div>
             </div>
-            <?php endif?>
-        <?php endfor?>
-    </section>
+            <div class="presentation-item-r">
+                <div class="presentation-text">
+                    <h3 class="presentation-item-title">Titr4</h3>
+                    <p class="presentation-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec lectus eu elit varius dictum eu nec erat. Nullam non ipsum viverra, accumsan justo et, porta lectus. Proin ac tellus suscipit, tempor ex sit amet, consequat magna. Donec ac porta mauris, a pulvinar felis. Sed non odio felis. In ipsum ex, rutrum vitae lobortis vel, pellentesque sit amet velit. Suspendisse vel sapien placerat, posuere mauris a, fermentum felis. Curabitur consequat venenatis ultrices. Quisque ut suscipit arcu, ut auctor dui. Duis sodales, lacus eget vehicula dictum, neque ipsum porta neque, et lobortis lacus arcu eget erat. Sed erat augue, sagittis id ante ut, auctor venenatis orci. Donec blandit quis orci eu molestie. Aliquam volutpat tellus non risus blandit aliquet. Maecenas vel dolor commodo, venenatis felis vel, viverra elit.</p>
+                </div>
+                <img class="presentation-img" src="./img/tof-4.jpg" alt="img"/>
+            </div>
+                        </section>
     <section>
         <h2>Nos jeux fares</h2>
         <div id='scroll'>
-            <?php for($i = 0; $i < sizeof($games_data); $i++):?>
-                <div class="game-item">
-                    <img src="<?=$games_data[$i][0]?>" alt="game"/>
-                    <h4><?=$games_data[$i][1]?></h4>
-                    <p><?=$games_data[$i][2]?></p>
+                            <div class="game-item">
+                    <img src="./img/Game-1.jpg" alt="game"/>
+                    <h4>FIFA 22</h4>
+                    <p>PS4, PS5, XBOX ONE, XBOX SERIES</p>
                 </div>
-            <? endfor?>
-        </div>
+                            <div class="game-item">
+                    <img src="./img/Game-2.jpg" alt="game"/>
+                    <h4>Samurai Shadow</h4>
+                    <p>PS4, PS5, XBOX ONE, XBOX SERIES</p>
+                </div>
+                            <div class="game-item">
+                    <img src="./img/Game-3.webp" alt="game"/>
+                    <h4>The Elden Scroll Online</h4>
+                    <p>PS4, PS5, XBOX ONE, XBOX SERIES</p>
+                </div>
+                            <div class="game-item">
+                    <img src="./img/Game-4.jpg" alt="game"/>
+                    <h4>Kingdoms of Amalurs</h4>
+                    <p>PS4, PS5, XBOX ONE, XBOX SERIES</p>
+                </div>
+                            <div class="game-item">
+                    <img src="./img/Game-5.jpg" alt="game"/>
+                    <h4>Monster Trucks Championship</h4>
+                    <p>PS4, PS5, XBOX ONE, XBOX SERIES</p>
+                </div>
+                    </div>
     </section>
     <section class="consoles">
         <h2>Nos consoles</h2>
         <div class="console-list">
-            <?php for($i = 0; $i < sizeof($consoles_data); $i++):?>
-                <img class="console-img" src=<?=$consoles_data[$i]?> alt="consonsole">
-            <? endfor?>
-        </div>
+                            <img class="console-img" src=../img/ps4-logo.svg alt="consonsole">
+                            <img class="console-img" src=../img/ps5-logo.svg alt="consonsole">
+                            <img class="console-img" src=../img/xbox-one-logo.svg alt="consonsole">
+                            <img class="console-img" src=../img/nintendo-logo.svg alt="consonsole">
+                    </div>
     </section>
     <section id="evenement">
         <!-- <h2>Prochain evenement</h2> -->
