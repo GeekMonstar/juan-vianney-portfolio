@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #47484a;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 2cm;
+    background-color: #47484a;
+    position: fixed;
+    transition: 1s;
+}
+
+#nav-links {
+    display: none;
+}
+
+#logo-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    color: white;
+}
+
+#logo-label h1 {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#header-logo {
+    height: 70px;
+    width: auto;
+}
+
+#div-header-cover {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/cover.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#div-header-cover h1 {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-links a {
+    color: white;
+    margin: 0 10px;
+}
+
+section h2 {
+    margin: 0 auto;
+    padding: 0 2cm;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin: 20px;
+    transition: 1s;
+}
+
+section:hover h2 {
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.presentation-item-r,
+.presentation-item-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.presentation-item-l img,
+.presentation-item-r img {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+.presentation-text {
+    width: 600px;
+    padding: 10px;
+}
+
+.presentation-text h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.presentation-p {
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+}
+
+#scroll {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 5px;
+}
+
+.game-item h4 {
+    text-align: left;
+}
+
+.game-item img {
+    height: 7cm;
+    width: auto;
+    background: -moz-linear-gradient();
+}
+
+.console-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.console-img {
+    height: 5cm;
+    width: auto;
+    margin: 20px;
+}
+
+footer {
+    background: linear-gradient(90deg, #1fceed, #f3aec1);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-link img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+@media (max-width: 1280px) {
+    #scroll {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .game-item img {
+        width: 90vw;
+        height: auto;
+        background: -moz-linear-gradient();
+    }
+}
+
+@media (max-width:450px) {
+
+    .presentation-item-r,
+    .presentation-item-l {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .presentation-item-l img,
+    .presentation-item-r img {
+        width: 90vw;
+        height: auto;
+        margin: 10px;
+    }
+
+    .presentation-text {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .presentation-text h3 {
+        color: white;
+        font-size: 25px;
+    }
+
+    .presentation-p {
+        width: 100%;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    #logo-label h1 {
+        font-family: 'Edu VIC WA NT Beginner', cursive;
+        font-size: 25px;
+    }
+
+    #header-logo {
+        height: 70px;
+        width: auto;
+    }
+
+    #nav-links a {
+        color: white;
+        font-size: 12px;
+        margin: 0 10px;
+    }
+
+    .console-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .console-img {
+        width: 1.5cm;
+        height: auto;
+        margin: 0 5px;
+    }
+
+    #div-header-cover h1 {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Edu VIC WA NT Beginner', cursive;
+    }
+
+    section h2 {
+        margin: 0 auto;
+        padding: 0 2cm;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin: 20px;
+        transition: 1s;
+    }
+
+    .presentation-text h3 {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+@media (max-width:400px) {
+    #nav-links {
+        display: none;
+    }
+}

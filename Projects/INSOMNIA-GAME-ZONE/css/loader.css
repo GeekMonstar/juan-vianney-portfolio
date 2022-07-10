@@ -1,0 +1,76 @@
+#loader {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #1fceed, #f3aec1);
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+}
+
+#loader p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#loader p span {
+    color: #909090;
+    animation: flash 1s infinite ease-out;
+}
+
+#loader p span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#loader p span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#loader p span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+#loader p span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+#loader p span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+#loader p span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+#loader p span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+#loader p span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+#loader p span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+#loader p span:nth-child(10) {
+    animation-delay: 1s;
+}
+
+
+@keyframes flash {
+    0% {
+        color: #909090;
+    }
+
+    90% {
+        color: #ffffff;
+    }
+
+    100% {
+        color: #909090;
+    }
+}
