@@ -9,6 +9,68 @@ header{
     background-color: white;
     color: black;
 }
+.fcc {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+}
+
+.ex-1 {
+    width: 10px;
+    height: 30px;
+    background-color: black;
+    border-radius: 2px;
+    display: inline-block;
+    animation: ex-1 2s infinite linear;
+}
+
+.ex-2 {
+    width: 10px;
+    height: 30px;
+    background-color: black;
+    border-radius: 2px;
+    display: inline-block;
+    animation: ex-2 1s infinite linear;
+}
+
+.cent {
+    width: 10px;
+    height: 30px;
+    background-color: black;
+    border-radius: 2px;
+    display: inline-block;
+    animation: cent 2s infinite linear;
+}
+@keyframes ex-1 {
+    50% {
+        transform: scaleY(2);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes ex-2 {
+    50% {
+        transform: scaleY(4);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes cent {
+    50% {
+        transform: scaleY(4);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
 h1{
     font-family: 'Source Code Pro', monospace;
     text-align: center;
@@ -22,7 +84,7 @@ section{
     padding-bottom: 50px;
 }
 #presentation{
-    background-color: black;
+    background : linear-gradient(0deg,black 0%, black 45%, white);
     color: white;
     padding-top: 20px;
 }
@@ -71,17 +133,30 @@ section{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    padding: 10px;
     transition: 0.5s;
 }
-.comp img{
-    width: 125px;
+.comp:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid white
+}
+.comp:hover svg{
+    fill: black;
+}
+.comp p{
+    text-align: center;
+}
+.comp svg{
+    width: 75px;
     height: auto;
     margin: auto;
+    fill: white;
 }
 .description h3{
     font-size: 20px;
@@ -108,11 +183,17 @@ footer{
 #loader{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10000;
+}
+svg{
+    fill: white;
+    height: 50px;
+    width: auto;
+    margin: 10px;
 }
 @media (min-width : 1024px) {
     section p{
