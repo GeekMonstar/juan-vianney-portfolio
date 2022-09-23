@@ -1,23 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
+    width: 100px;
+    height: 100px;
     background-color: skyblue;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: mouveb 7s infinite;
-    margin: 300px 300px 300px 300px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    left: 50%;
 }
 #sun{
     width: 500px;
     height: 500px;
     background-color: yellow;
-    box-shadow: 0px 0px 15 px 10px rgb(255, 217, 0);
+    box-shadow: 0px 0px 15px 10px rgb(255, 217, 0);
     border-radius:50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top:50%;
 }
 #moon{
     width: 480px;
@@ -45,3 +53,4 @@ body{
     45%,55%{
         background-color: rgb(16, 66, 133);
     }
+}
