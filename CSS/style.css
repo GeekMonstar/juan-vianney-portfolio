@@ -154,7 +154,7 @@ section{
 }
 .comp svg{
     width: 75px;
-    height: auto;
+    min-height: 50px;
     margin: auto;
     fill: white;
 }
