@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 header{
     background-color: white;
@@ -112,13 +113,13 @@ section{
     align-items: center;
     padding-left: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 18px;
 }
-#competences{
+#competences, #tools{
     background-color: black;
     color: white;
 }
-#competences h2{
+#competences h2, #tools h2{
     text-align: center;
     margin-bottom: 30px;
     font-size: 32px;
@@ -157,6 +158,18 @@ section{
     min-height: 50px;
     margin: auto;
     fill: white;
+}
+#tools-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.tool{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .description h3{
     font-size: 20px;
@@ -240,7 +253,7 @@ svg{
 }
 @media (max-width:1000px) {
     section p{
-        font-size: 25px;
+        font-size: 15px;
         margin: 10px;
         font-family: 'Spline Sans Mono', monospace;
     }
