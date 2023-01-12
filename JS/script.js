@@ -26,25 +26,25 @@ const competences = [
 ];
 const projectsData = [
     {
-        'link': '../Projects/AppliMeteo/',
+        'link': '../Projects/AppliMeteo',
         'title': 'Apllication météo',
         'mobileImage': './img/cap-1-mobile.png',
         'pcImage': './img/cap-1-pc.png',
     },
     {
-        'link': '../Projects/SportApp/',
+        'link': '../Projects/SportApp',
         'title': 'PlayerWiki',
         'mobileImage': './img/cap-2-mobile.png',
         'pcImage': './img/cap-2-pc.png',
     },
     {
-        'link': '../Projects/BitcoinPrice/',
+        'link': '../Projects/BitcoinPrice',
         'title': 'Prix du Bitcoin',
         'mobileImage': './img/cap-3-mobile.png',
         'pcImage': './img/cap-3-pc.png',
     },
     {
-        'link': '../Projects/sun-moon/',
+        'link': '../Projects/sun-moon',
         'title': 'éclipse',
         'mobileImage': './img/cap-4-mobile.png',
         'pcImage': './img/cap-4-pc.png',
