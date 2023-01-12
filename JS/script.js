@@ -78,7 +78,7 @@ competences.map(item => {
 
 projectsData.map(item => {
     projectSection.innerHTML += `<div class="project">
-            <a href="${item.link}">
+            <a href=${item.link}>
             <div>
             </div>
                 <img class="item-img" src="${window.screen.width >= 700 ? item.pcImage : item.mobileImage}" alt="${item.title}">
