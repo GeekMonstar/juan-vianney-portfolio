@@ -32,7 +32,7 @@ const projectsData = [
         'pcImage': './img/cap-1-pc.png',
     },
     {
-        'link': '../Projects/SportApp/index.html',
+        'link': './Projects/SportApp/',
         'title': 'PlayerWiki',
         'mobileImage': './img/cap-2-mobile.png',
         'pcImage': './img/cap-2-pc.png',
