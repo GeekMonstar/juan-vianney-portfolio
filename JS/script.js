@@ -27,7 +27,7 @@ const competences = [
 const projectsData = [
     {
         'link': './Projects/AppliMeteo/',
-        'title': 'Apllication météo',
+        'title': 'Application météo',
         'mobileImage': './img/cap-1-mobile.png',
         'pcImage': './img/cap-1-pc.png',
     },
