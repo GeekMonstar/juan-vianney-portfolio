@@ -26,25 +26,25 @@ const competences = [
 ];
 const projectsData = [
     {
-        'link': './Projects/AppliMeteo/',
+        'link': 'https://geekmonstar.github.io/weather/',
         'title': 'Application météo',
         'mobileImage': './img/cap-1-mobile.png',
         'pcImage': './img/cap-1-pc.png',
     },
     {
-        'link': './Projects/SportApp/',
+        'link': 'https://geekmonstar.github.io/wikifoot/',
         'title': 'PlayerWiki',
         'mobileImage': './img/cap-2-mobile.png',
         'pcImage': './img/cap-2-pc.png',
     },
     {
-        'link': './Projects/BitcoinPrice/',
+        'link': 'https://geekmonstar.github.io/bitcoin/./Projects/BitcoinPrice/',
         'title': 'Prix du Bitcoin',
         'mobileImage': './img/cap-3-mobile.png',
         'pcImage': './img/cap-3-pc.png',
     },
     {
-        'link': './Projects/sun-moon/',
+        'link': 'https://geekmonstar.github.io/eclipse/',
         'title': 'éclipse',
         'mobileImage': './img/cap-4-mobile.png',
         'pcImage': './img/cap-4-pc.png',
