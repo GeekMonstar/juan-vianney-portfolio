@@ -99,7 +99,7 @@ competences.map(item => {
                 </svg>
                 <p>${item.title}</p>
                 <div class='progress'>
-                    <div class='progress-value style=`width: ${item.level}%; height: 100%`></div>
+                    <div class='progress-value style=`width: ${item.level}; height: 30%`></div>
                 </div>
             </div>`
 })
