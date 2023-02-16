@@ -99,7 +99,7 @@ competences.map(item => {
                 </svg>
                 <p>${item.title}</p>
                 <div class='progress'>
-                    <div class='progress-value style="width:${item.level};height:30%"></div>
+                    <div class='progress-value' style="width:${item.level}%;height:30px"></div>
                 </div>
             </div>`
 })
@@ -109,7 +109,9 @@ projectsData.map(item => {
             <a href=${item.link}>
             <div>
             </div>
-                <img class="item-img" src="${window.screen.width >= 700 ? item.pcImage : item.mobileImage}" alt="${item.title}">
+                <div class="item-img-container">
+                    <img class="item-img" src="${window.screen.width >= 700 ? item.pcImage : item.mobileImage}" alt="${item.title}">
+                </div>
             </a>
             <div>
                 <h1>${item.title}</h1>
