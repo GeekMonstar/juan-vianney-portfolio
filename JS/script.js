@@ -98,6 +98,9 @@ competences.map(item => {
                         d='${item.svgPathD}' />
                 </svg>
                 <p>${item.title}</p>
+                <ul>
+                    ${item.list.map(sub_item=>`<li>${sub_item}</li>`)}
+                </ul>
             </div>`
 })
 
