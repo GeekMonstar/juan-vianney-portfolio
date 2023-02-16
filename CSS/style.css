@@ -159,6 +159,13 @@ section{
     margin: auto;
     fill: white;
 }
+.progress{
+    width: 150px;
+    height: 30px;
+    border: 2px solid white;
+}
+.progress-value{
+    background: white;
 #tools-list{
     display: flex;
     justify-content: center;
