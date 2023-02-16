@@ -133,7 +133,7 @@ section{
 .comp{
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,6 +143,7 @@ section{
     transition: 0.5s;
 }
 .comp:hover{
+    background: white;
     color: black;
     border: 2px solid white
 }
