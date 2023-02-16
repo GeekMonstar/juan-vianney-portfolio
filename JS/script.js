@@ -111,7 +111,10 @@ projectsData.map(item => {
             </div>
                 <img class="item-img" src="${window.screen.width >= 700 ? item.pcImage : item.mobileImage}" alt="${item.title}">
             </a>
-            <div class="p-title">${item.title}</div>
+            <div>
+                <h1>${item.title}</h1>
+                <p>${item.description}</p>
+            </div>
         </div>`
 });
 
