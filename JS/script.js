@@ -55,7 +55,7 @@ const projectsData = [
         'dev': false
     },
     {
-        'link': 'https://geekmonstar.github.io/bitcoin/./Projects/BitcoinPrice/',
+        'link': 'https://geekmonstar.github.io/bitcoin/',
         'title': 'Prix du Bitcoin',
         'mobileImage': './img/cap-3-mobile.png',
         'pcImage': './img/cap-3-pc.png',
