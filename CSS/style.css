@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
     font-family: 'Pacifico', cursive;
 }
-header{
+
+header {
     background-color: white;
     color: black;
 }
+
 .fcc {
     position: absolute;
     left: 50%;
@@ -44,6 +47,7 @@ header{
     display: inline-block;
     animation: cent 2s infinite linear;
 }
+
 @keyframes ex-1 {
     50% {
         transform: scaleY(2);
@@ -73,33 +77,40 @@ header{
         transform: scaleY(1);
     }
 }
-h1{
+
+h1 {
     font-family: 'Source Code Pro', monospace;
     text-align: center;
 }
-span{
+
+span {
     text-decoration: underline;
 }
-section{
+
+section {
     min-height: 7cm;
     padding-bottom: 50px;
 }
-#presentation{
-    background : linear-gradient(0deg,black 0%, black 45%, white);
+
+#presentation {
+    background: linear-gradient(0deg, black 0%, black 45%, white);
     color: white;
     padding-top: 20px;
 }
-#project{
+
+#project {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.project{
+
+.project {
     margin: 5px;
     position: relative;
 }
-.project .p-title{
+
+.project .p-title {
     transform: translateY(-100%);
     position: absolute;
     top: 100%;
@@ -115,24 +126,30 @@ section{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
 }
-#competences, #tools{
+
+#competences,
+#tools {
     background-color: black;
     color: white;
 }
-#competences h2, #tools h2{
+
+#competences h2,
+#tools h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 32px;
 }
-#comp-list{
+
+#comp-list {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.comp{
+
+.comp {
     width: 150px;
-    height: 150px;
+    min-height: 150px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -142,65 +159,85 @@ section{
     padding: 10px;
     transition: 0.5s;
 }
-.comp:hover{
+
+.comp:hover {
     background: white;
     color: black;
     border: 2px solid white
 }
-.comp:hover svg{
+
+.comp:hover svg {
     fill: black;
 }
-.comp p{
+
+.comp p {
+    font-size: 15px;
     text-align: center;
 }
-.comp svg{
+
+.comp svg {
     width: 75px;
     min-height: 50px;
     margin: auto;
     fill: white;
 }
-.progress{
+.progress {
     width: 150px;
     height: 30px;
     border: 2px solid white;
 }
-.progress-value{
+.progress-value {
     background: white;
-#tools-list{
+}
+.comp:hover .progress {
+    border: 2px solid black;
+}
+.comp:hover .progress-value {
+    background: black;
+}
+
+#tools-list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
 }
-.tool{
+
+.tool {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.description h3{
+
+.description h3 {
     font-size: 20px;
 }
-.description p{
+
+.description p {
     font-size: 15px;
 }
-footer{
+
+footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
 }
-#reseaux{
+
+#reseaux {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.project-link img{
+
+.project-link img {
     width: 50px;
     height: auto;
     margin: 10px;
 }
-#loader{
+
+#loader {
     width: 100%;
     height: 100%;
     background-color: white;
@@ -209,98 +246,123 @@ footer{
     left: 0;
     z-index: 10000;
 }
-svg{
+
+svg {
     fill: white;
     height: 50px;
     width: auto;
     margin: 10px;
 }
+
 @media (min-width : 1024px) {
-    section p{
+    section p {
         font-size: 25px;
         margin: 10px;
         font-family: 'Spline Sans Mono', monospace;
     }
-    #presentation p{
+
+    #presentation p {
         width: 65vw;
     }
-    #line{
+
+    #line {
         width: 5px;
         height: 200px;
         background-color: white;
         margin: 15px;
     }
-    #photo-profil{
+
+    #photo-profil {
         width: 200px;
         height: 200px;
         border-radius: 50%;
     }
-    a .item-img{
+
+    .item-img-container{
         height: 12cm;
-        width: auto;
+        width: 100%;
     }
-    a:hover .item-img{
+
+    a .item-img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    a:hover .item-img {
         opacity: .7;
         border: 2px black solid;
     }
-    .comp:hover{
+
+    .comp:hover {
         transform: scale(1.3);
         transition: 0.5s;
     }
-    #presentation{
+
+    #presentation {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .project:hover .p-title{
+
+    .project:hover .p-title {
         height: 40px;
         background-color: black;
         transition: 1s;
     }
 }
+
 @media (max-width:1000px) {
-    section p{
+    section p {
         font-size: 15px;
         margin: 10px;
         font-family: 'Spline Sans Mono', monospace;
     }
-    #presentation p{
+
+    #presentation p {
         width: 90vw;
         text-align: center;
     }
-    #line{
+
+    #line {
         width: 200px;
         height: 5px;
         background-color: white;
         margin: 15px;
     }
-    #photo-profil{
+
+    #photo-profil {
         width: 200px;
         height: 200px;
         border-radius: 50%;
     }
-    a .item-img{
+
+    a .item-img {
         width: 90vw;
         height: auto;
     }
-    #presentation{
+
+    #presentation {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .project .p-title{
+
+    .project .p-title {
         height: 40px;
         background-color: black;
         transition: 1s;
     }
 }
+
 @media (max-width: 400px) {
-    .comp{
+    .comp {
         width: 100px;
         height: 100px;
     }
-    .comp img{
+
+    .comp img {
         width: 80px;
         height: auto;
     }
