@@ -279,14 +279,15 @@ svg {
     }
 
     .item-img-container{
-        height: 12cm;
+        height: 300px;
         width: 100%;
     }
 
     a .item-img {
         height: 100%;
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
+        image-orientation: from-image;
     }
 
     a:hover .item-img {
@@ -304,7 +305,10 @@ svg {
         justify-content: center;
         align-items: center;
     }
-
+    #project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .project:hover .p-title {
         height: 40px;
         background-color: black;
