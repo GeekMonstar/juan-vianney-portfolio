@@ -28,17 +28,17 @@ const competences = [
     {
         title: 'JS',
         icon: 'js',
-        level: 80
+        level: 70
     },
     {
         title: 'PHP',
         icon: 'php',
-        level: 40
+        level: 30
     },
     {
         title: 'Base de donnée',
         icon: 'db',
-        level: 80
+        level: 50
     }
 ];
 const projectsData = [
@@ -46,7 +46,15 @@ const projectsData = [
         link: 'https://geekmonstar.github.io/AudioPlayer/',
         title: 'Audio Player',
         cover: './img/cap-6.png',
-        description: '',
+        description: 'Lecteur audio personalisé qui comporte un visualiseur.',
+        skills: ['html', 'css', 'js'],
+        dev: false
+    },
+    {
+        link: ' https://geekmonstar.github.io/Lecteur-video-personnalise/',
+        title: 'Lecteur vidéo personnalisé',
+        cover: './img/cap-9.png',
+        description: 'Lecteur vidéo personalisé sans control de natif.',
         skills: ['html', 'css', 'js'],
         dev: false
     },
@@ -54,7 +62,7 @@ const projectsData = [
         link: 'https://geekmonstar.github.io/Linear-gradient-generator/',
         title: 'Générateur de dégradé',
         cover: './img/cap-7.png',
-        description: '',
+        description: 'Générateur de dégradé dynamyque comportant une fontionnalité de copie du dégradé généré.',
         skills: ['html', 'css', 'js'],
         dev: false
     },
@@ -62,7 +70,7 @@ const projectsData = [
         link: 'https://geekmonstar.github.io/particles/',
         title: 'Particules',
         cover: './img/cap-8.png',
-        description: '',
+        description: 'Particules animées créer grace au Canvas de HTML5.',
         skills: ['html', 'css', 'js'],
         dev: false
     },
@@ -70,7 +78,7 @@ const projectsData = [
         link: 'https://geekmonstar.github.io/weather/',
         title: 'Application météo',
         cover: './img/cap-1-pc.png',
-        description: '',
+        description: "Site metéo prenant en compte la localisation lorsque vous l'accepté.",
         skills: ['html', 'css', 'js'],
         dev: false
     },
@@ -78,7 +86,7 @@ const projectsData = [
         link: 'https://geekmonstar.github.io/game-zone/',
         title: 'Gaming zone (website)',
         cover: './img/cap-5-pc.png',
-        description: '',
+        description: "Site de presentation d'un lieu d'attraction vidéoludique.",
         skills: ['html', 'css', 'js'],
         dev: false
     },
@@ -94,7 +102,7 @@ const projectsData = [
         link: 'https://geekmonstar.github.io/bitcoin/',
         title: 'Prix du Bitcoin',
         cover: './img/cap-3-pc.png',
-        description: '',
+        description: 'Obtener en temps réel la valeur en temps réel la valeur du bitcoin.',
         skills: ['html', 'css', 'js'],
         dev: false
     },
@@ -102,8 +110,8 @@ const projectsData = [
         link: 'https://geekmonstar.github.io/eclipse/',
         title: 'éclipse',
         cover: './img/cap-4-pc.png',
-        description: '',
-        skills: ['html', 'css', 'js'],
+        description: 'Animation en pur css.',
+        skills: ['html', 'css'],
         dev: false
     }
 ];
@@ -147,7 +155,7 @@ projectsData.map(item => {
             <div class='project-data'>
                 <h3 class='project-name'>${item.title}</h3>
                 <div class='project-skills-icons'>${item.skills.map(i=>showIcon('skills', i)).join('')}</div>
-                <p>${item.description}</p>
+                <p class='project-description'>${item.description}</p>
             </div>
             <a class='integral-link' href=${item.link}>
         </div>`
