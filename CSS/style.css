@@ -128,7 +128,7 @@ section {
 .project-name{
     font-size: 25px;
     font-weight: 900;
-    text-align: justify;
+    text-align: left;
 }
 .project-skills-icons{
     display: flex;
