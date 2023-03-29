@@ -67,6 +67,22 @@ const projectsData = [
         dev: false
     },
     {
+        link: 'https://geekmonstar.github.io/wikipedia-app/',
+        title: 'Recherche wikipedia',
+        cover: './img/cap-10.png',
+        description: "Utilisation de l'API de wikipedia pour proposer des resultat de recherche.",
+        skills: ['html', 'css', 'js'],
+        dev: false
+    },
+    {
+        link: 'https://geekmonstar.github.io/Quiz/',
+        title: 'Quiz',
+        cover: './img/cap-11.png',
+        description: "Quiz basique.",
+        skills: ['html', 'css', 'js'],
+        dev: false
+    },
+    {
         link: 'https://geekmonstar.github.io/particles/',
         title: 'Particules',
         cover: './img/cap-8.png',
@@ -84,7 +100,7 @@ const projectsData = [
     },
     {
         link: 'https://geekmonstar.github.io/game-zone/',
-        title: 'Gaming zone (website)',
+        title: 'Gaming zone(website)',
         cover: './img/cap-5-pc.png',
         description: "Site de presentation d'un lieu d'attraction vidéoludique.",
         skills: ['html', 'css', 'js'],
