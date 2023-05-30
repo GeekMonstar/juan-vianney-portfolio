@@ -4,28 +4,28 @@ var competences = [
     {
         title: 'HTML5',
         icon: 'html',
-        level: 80,
+        level: 95,
         color: 'orange'
     },
     {
         title: 'CSS3',
         icon: 'css',
-        level: 80,
+        level: 95,
     },
     {
         title: 'JS',
         icon: 'js',
-        level: 70
+        level: 90
     },
     {
         title: 'PHP',
         icon: 'php',
-        level: 30
+        level: 50
     },
     {
         title: 'Base de donnée',
         icon: 'db',
-        level: 50
+        level: 60
     }
 ];
 exports.default = competences;
