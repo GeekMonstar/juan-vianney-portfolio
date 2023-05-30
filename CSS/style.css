@@ -30,7 +30,6 @@ header {
     width: 10px;
     height: 30px;
     background-color: black;
-    border-radius: 2px;
     display: inline-block;
     animation: ex-1 2s infinite linear;
 }
@@ -39,7 +38,6 @@ header {
     width: 10px;
     height: 30px;
     background-color: black;
-    border-radius: 2px;
     display: inline-block;
     animation: ex-2 1s infinite linear;
 }
@@ -48,7 +46,6 @@ header {
     width: 10px;
     height: 30px;
     background-color: black;
-    border-radius: 2px;
     display: inline-block;
     animation: cent 2s infinite linear;
 }
@@ -207,8 +204,10 @@ section {
     margin-bottom: 10px;
 }
 .progress-value {
+    width: 0;
     height: 100%;
     background: white;
+    transition: 1s width ease-in-out;
 }
 .comp:hover .progress {
     border: 2px solid black;
