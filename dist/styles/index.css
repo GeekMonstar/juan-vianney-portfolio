@@ -18,31 +18,28 @@ header {
   color: black;
 }
 
-.fcc {
+.loader-group {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
 }
-
-.ex-1 {
+.loader-group .ex-1 {
   width: 10px;
   height: 30px;
   background-color: black;
   display: inline-block;
   animation: ex-1 2s infinite linear;
 }
-
-.ex-2 {
+.loader-group .ex-2 {
   width: 10px;
   height: 30px;
   background-color: black;
   display: inline-block;
   animation: ex-2 1s infinite linear;
 }
-
-.cent {
+.loader-group .cent {
   width: 10px;
   height: 30px;
   background-color: black;
@@ -243,38 +240,9 @@ section {
   align-items: center;
 }
 
-/* .react svg{
-    transition: 1s;
-}
-.react svg.active{
-    transform: rotate(0deg);
-    transform: rotate(360deg);
-}
-
-.redux svg{
-    transform: rotate(0deg);
-    transition: 1s transform;
-}
-.redux svg.active{
-    transform: rotate(-360deg);
-}
-
-.nodejs svg{
-    transition: 1s tranform;
-}
-.nodejs svg.active{
-    transform: scale(1.5)
-}
-.mongodb svg{
-    transition: 1s transform;
-}
-.mongodb svg.active{
-    animation: shake 2.5s ease-in-out;
-} */
 .description h3 {
   font-size: 20px;
 }
-
 .description p {
   font-size: 15px;
 }
@@ -285,8 +253,7 @@ footer {
   text-align: center;
   padding: 10px;
 }
-
-#reseaux {
+footer #reseaux {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,7 +264,6 @@ footer {
   background: white;
   border: 1px solid black;
 }
-
 .project::before {
   content: "";
   position: absolute;
@@ -309,11 +275,9 @@ footer {
   z-index: -1;
   transition: 0.5s transform;
 }
-
 .project:hover::before {
   transform: rotateZ(2deg);
 }
-
 .project::after {
   content: "";
   position: absolute;
@@ -327,16 +291,10 @@ footer {
   z-index: -1;
   transition: 0.5s transform;
 }
-
 .project:hover::after {
   transform: rotateZ(-3deg);
 }
 
-/* .project-link img {
-    width: 50px;
-    height: auto;
-    margin: 10px;
-} */
 #loader {
   width: 100vw;
   height: 100vh;
@@ -361,11 +319,9 @@ footer {
   left: 0;
   z-index: 1000;
 }
-
 #launcher p {
   font-size: 32px;
 }
-
 #launcher .button-start .btn-top {
   width: 200px;
   height: 200px;
@@ -376,8 +332,7 @@ footer {
   box-shadow: inset 0px 0px 10px white;
   z-index: 100;
 }
-
-#launcher .button .btn-top::before {
+#launcher .button-start .btn-top::before {
   content: "";
   width: 200px;
   height: 200px;
@@ -410,6 +365,11 @@ svg {
     margin: 10px;
     font-family: "Spline Sans Mono", monospace;
   }
+  #presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #presentation p {
     width: 65vw;
   }
@@ -428,14 +388,13 @@ svg {
     height: 300px;
     width: 100%;
   }
-  .item-img {
+  .item-img-container .item-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: top;
-    /* image-orientation: from-image; */
   }
-  .item-img-container:hover .item-img {
+  .item-img-container .item-img:hover .item-img {
     opacity: 0.7;
     border: 2px black solid;
   }
@@ -443,16 +402,11 @@ svg {
     transform: scale(1.3);
     transition: 0.5s;
   }
-  #presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   #project {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .project:hover .p-title {
+  #project:hover .p-title {
     height: 40px;
     background-color: black;
     transition: 1s;
@@ -463,6 +417,12 @@ svg {
     font-size: 15px;
     margin: 10px;
     font-family: "Spline Sans Mono", monospace;
+  }
+  #presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   #presentation p {
     width: 90vw;
@@ -483,29 +443,12 @@ svg {
     width: 90vw;
     height: auto;
   }
-  #presentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .project .p-title {
     height: 40px;
     background-color: black;
     transition: 1s;
   }
 }
-/* @media (max-width: 400px) {
-    .comp {
-        width: 100px;
-        height: 100px;
-    }
-
-    .comp img {
-        width: 80px;
-        height: auto;
-    }
-} */
 @keyframes ex-1 {
   50% {
     transform: scaleY(2);
