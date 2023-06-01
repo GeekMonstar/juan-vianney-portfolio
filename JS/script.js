@@ -2,6 +2,12 @@ const loader = document.querySelector('#loader');
 const projectSection = document.querySelector('#project');
 const competencesSection = document.querySelector('#comp-list');
 const technosSection = document.querySelector('#technos-list');
+const audioPlayer = document.querySelector('audio');
+const launcher = document.querySelector('#launcher');
+const startBtn = document.querySelector('.button-start');
+const presentationParagraph = document.querySelector('#presentation-txt');
+const presentationTxt = `Je suis <span>Juan Vianney</span>, je suis developpeur web junior. Je suis un passionné du numérique depuis ma tendre enfance et le développement web à été une opportunité pour moi d'intégrer ce domaine. J'apprends le developpement web depuis mes années de lycée ce qui m'a permis de gagner en automie dans l'acquisition de la connaissance par le biais d'internet. Pour en savoir plus, merci de continuer l'exploration de mon portfolio 😁.`
+
 const icons = {
     skills: {
         html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" /></svg>`,
@@ -116,7 +122,7 @@ const projectsData = [
         link: 'https://geekmonstar.github.io/weather/',
         title: 'Application météo',
         cover: './img/cap-1-pc.png',
-        description: "Site metéo prenant en compte la localisation lorsque vous l'accepté.",
+        description: "Site metéo prenant en compte la localisation lorsque vous l'acceptez.",
         skills: ['html', 'css', 'js'],
         dev: false
     },
@@ -214,7 +220,36 @@ const technos = [
         class: 'mongodb',
         stack: 'back'
     }
-]
+];
+
+startBtn.addEventListener('click', start)
+
+function start(){
+    launcher.remove();
+    audioPlayer.play();
+    const writter = setInterval(()=>{
+        if(index < presentationTxt.length){
+            const randomDelay = Math.random() * 100;
+            setTimeout(()=>{
+                presentationParagraph.innerHTML += presentationTxt[index];
+                index += 1;
+            }, randomDelay)
+        }
+        else{
+            clearInterval(writter);
+            audioPlayer.pause();
+        }
+    }, 100)
+    setTimeout(()=>{
+        for(let i = 0; i < competences.length; i++){
+            progressValues[i].style=`width:${competences[i].level}%;height:100%`;
+        }
+    }, 500);
+}
+
+window.addEventListener('load', ()=>{
+    loader.remove();
+})
 
 competences.map(item => {
     competencesSection.innerHTML +=
@@ -226,16 +261,8 @@ competences.map(item => {
             </div>
         </div>`
 })
-
+index = 0;
 const progressValues = document.querySelectorAll('.progress-value');
-window.addEventListener('load', ()=>{
-    loader.remove();
-    setTimeout(()=>{
-        for(let i = 0; i < competences.length; i++){
-            progressValues[i].style=`width:${competences[i].level}%;height:100%`;
-        }
-    }, 500);
-})
 
 projectsData.map(item => {
     if (!item.dev) {
