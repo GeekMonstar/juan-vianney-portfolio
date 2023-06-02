@@ -33,6 +33,8 @@ interface I_Technos {
   stack: "front" | "back" | "full";
 }
 
+const imgDir = "src/img";
+
 export const icons: I_Icons = {
   skills: {
     html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" /></svg>`,
@@ -79,7 +81,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/AudioPlayer/",
     title: "Audio Player",
-    cover: "./img/cap-6.png",
+    cover: `${imgDir}/cap-6.png`,
     description: "Lecteur audio personalisé qui comporte un visualiseur.",
     skills: ["html", "css", "js"],
     dev: false,
@@ -87,7 +89,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: " https://geekmonstar.github.io/Lecteur-video-personnalise/",
     title: "Lecteur vidéo personnalisé",
-    cover: "./img/cap-9.png",
+    cover: `${imgDir}/cap-9.png`,
     description: "Lecteur vidéo personalisé sans control de natif.",
     skills: ["html", "css", "js"],
     dev: false,
@@ -95,7 +97,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/Linear-gradient-generator/",
     title: "Générateur de dégradé",
-    cover: "./img/cap-7.png",
+    cover: `${imgDir}/cap-7.png`,
     description:
       "Générateur de dégradé dynamyque comportant une fontionnalité de copie du dégradé généré.",
     skills: ["html", "css", "js"],
@@ -104,7 +106,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/github-api/",
     title: "Github API",
-    cover: "./img/cap-12.png",
+    cover: `${imgDir}/cap-12.png`,
     description:
       "Ce site utilise l'API de Github pour donner des informations sur les utilisateur par le billet de leur nom d'utilisateur.",
     skills: ["html", "css", "ts"],
@@ -113,7 +115,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/animations/",
     title: "Animations",
-    cover: "./img/cap-13.png",
+    cover: `${imgDir}/cap-13.png`,
     description:
       "Ce site est une présentation de Porshe(non-officielle) qui est dynamique grace aux animations qui y sont.",
     skills: ["html", "css", "ts"],
@@ -122,7 +124,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/wikipedia-app/",
     title: "Recherche wikipedia",
-    cover: "./img/cap-10.png",
+    cover: `${imgDir}/cap-10.png`,
     description:
       "Utilisation de l'API de wikipedia pour proposer des resultat de recherche.",
     skills: ["html", "css", "js"],
@@ -131,7 +133,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/Quiz/",
     title: "Quiz",
-    cover: "./img/cap-11.png",
+    cover: `${imgDir}/cap-11.png`,
     description: "Quiz basique.",
     skills: ["html", "css", "js"],
     dev: false,
@@ -139,7 +141,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/particles/",
     title: "Particules",
-    cover: "./img/cap-8.png",
+    cover: `${imgDir}/cap-8.png`,
     description: "Particules animées créer grace au Canvas de HTML5.",
     skills: ["html", "css", "js"],
     dev: false,
@@ -147,7 +149,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/weather/",
     title: "Application météo",
-    cover: "./img/cap-1-pc.png",
+    cover: `${imgDir}/cap-1.png`,
     description:
       "Site metéo prenant en compte la localisation lorsque vous l'acceptez.",
     skills: ["html", "css", "js"],
@@ -156,7 +158,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/game-zone/",
     title: "Gaming zone(website)",
-    cover: "./img/cap-5-pc.png",
+    cover: `${imgDir}/cap-5.png`,
     description: "Site de presentation d'un lieu d'attraction vidéoludique.",
     skills: ["html", "css", "js"],
     dev: false,
@@ -164,7 +166,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/wikifoot/",
     title: "PlayerWiki",
-    cover: "./img/cap-2-pc.png",
+    cover: `${imgDir}/cap-2.png`,
     description: "",
     skills: ["html", "css", "js"],
     dev: true,
@@ -172,7 +174,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/bitcoin/",
     title: "Prix du Bitcoin",
-    cover: "./img/cap-3-pc.png",
+    cover: `${imgDir}/cap-3.png`,
     description:
       "Obtener en temps réel la valeur en temps réel la valeur du bitcoin.",
     skills: ["html", "css", "js"],
@@ -181,7 +183,7 @@ export const projectsData: I_ProjectsData[] = [
   {
     link: "https://geekmonstar.github.io/eclipse/",
     title: "éclipse",
-    cover: "./img/cap-4-pc.png",
+    cover: `${imgDir}/cap-4.png`,
     description: "Animation en pur css.",
     skills: ["html", "css"],
     dev: false,
