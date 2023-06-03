@@ -64,6 +64,9 @@ section {
   outline: none;
   border: 0;
 }
+section p {
+  font-family: "Spline Sans Mono", monospace;
+}
 
 .transition {
   width: 100%;
@@ -416,7 +419,6 @@ svg {
   section p {
     font-size: 15px;
     margin: 10px;
-    font-family: "Spline Sans Mono", monospace;
   }
   #presentation {
     display: flex;
@@ -438,6 +440,7 @@ svg {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;
   }
   .item-img {
     width: 90vw;
