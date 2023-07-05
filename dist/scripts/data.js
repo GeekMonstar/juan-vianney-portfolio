@@ -67,6 +67,14 @@ export const projectsData = [
         dev: false,
     },
     {
+        link: "https://geekmonstar.github.io/timestamp/",
+        title: "Timestamp",
+        cover: `${imgDir}/cap-14.png`,
+        description: "Compte à rebours dynamique vers une date symbolique (en tout cas pour moi 😁). Cliquez pour en savoir plus.",
+        skills: ["html", "css", "js"],
+        dev: false,
+    },
+    {
         link: "https://geekmonstar.github.io/github-api/",
         title: "Github API",
         cover: `${imgDir}/cap-12.png`,
