@@ -74,7 +74,7 @@ export const competences: I_Competences[] = [
   {
     title: "Base de donnée",
     icon: "db",
-    level: 60,
+    level: 40,
   },
 ];
 export const projectsData: I_ProjectsData[] = [
