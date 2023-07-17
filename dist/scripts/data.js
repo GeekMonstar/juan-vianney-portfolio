@@ -38,7 +38,7 @@ export const competences = [
     {
         title: "Base de donnée",
         icon: "db",
-        level: 60,
+        level: 40,
     },
 ];
 export const projectsData = [

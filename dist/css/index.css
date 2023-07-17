@@ -60,7 +60,7 @@ h1 span {
   font-weight: 900;
 }
 
-span {
+span.underline {
   text-decoration: underline;
 }
 
@@ -410,6 +410,21 @@ svg {
     height: 40px;
     background-color: black;
     transition: 1s;
+  }
+}
+.txt-cursor {
+  animation: txt-cursor-anim 1s infinite;
+}
+
+@keyframes txt-cursor-anim {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @media (max-width: 1000px) {
