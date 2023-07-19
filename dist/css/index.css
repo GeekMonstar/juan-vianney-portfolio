@@ -331,7 +331,8 @@ footer #reseaux {
   z-index: 1000;
 }
 #launcher p {
-  font-size: 32px;
+  font-size: 20px;
+  text-align: center;
 }
 #launcher .button-start {
   cursor: pointer;
