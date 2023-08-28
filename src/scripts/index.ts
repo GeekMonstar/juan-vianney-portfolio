@@ -7,7 +7,7 @@ const audioPlayer = document.querySelector("audio")!;
 const launcher = document.querySelector("#launcher")!;
 const startBtn = document.querySelector(".button-start")!;
 const presentationSpan = document.querySelector("#presentation-txt-src")!;
-const presentationTxt = `Je suis <span>Juan Vianney</span>, je suis developpeur web junior. Je suis un passionné du numérique depuis ma tendre enfance et le développement web à été une opportunité pour moi d'intégrer ce domaine. J'apprends le developpement web depuis mes années de lycée ce qui m'a permis de gagner en autonomie dans l'acquisition de la connaissance par le biais d'internet. Pour en savoir plus, merci de continuer l'exploration de mon portfolio 😁.`;
+const presentationTxt = `Je suis<span> Juan Vianney</span>, je suis developpeur web junior. Je suis un passionné du numérique depuis ma tendre enfance et le développement web à été une opportunité pour moi d'intégrer ce domaine. J'apprends le developpement web depuis mes années de lycée ce qui m'a permis de gagner en autonomie dans l'acquisition de la connaissance par le biais d'internet. Pour en savoir plus, merci de continuer l'exploration de mon portfolio 😁.`;
 
 startBtn.addEventListener("click", start);
 let index = 0;
