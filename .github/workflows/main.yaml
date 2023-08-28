@@ -24,6 +24,6 @@ jobs:
           server: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          local-dir: ./dist/ # Répertoire local où se trouvent les fichiers compilés
+          local-dir: ./ # Répertoire local où se trouvent les fichiers compilés
           server-dir: /public_html/ # Répertoire distant sur le serveur
 
