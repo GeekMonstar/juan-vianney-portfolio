@@ -13,11 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-
       - name: Upload to Server
         uses: wftp/action@v1
         with:
@@ -25,5 +20,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           local-dir: ./ # Répertoire local où se trouvent les fichiers compilés
-          server-dir: /public_html/ # Répertoire distant sur le serveur
+          server-dir: /public_html/juanvianneynm.com # Répertoire distant sur le serveur
 
